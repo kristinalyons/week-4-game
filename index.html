@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Grub Collector Game</title>
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/images.css">
+
+	<!--jQuery-->
+	<script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+
+	<!--Overall Bootstrap Grid-->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="panel panel-default">
+					<h1 class="text-center">Grub Collector!</h1>
+				</div>
+			</div>
+		</div>
+
+
+		<!--Game Description-->
+		<div class="row">
+			<div class="col-lg-5">
+				<div class="panel panel-default">
+					<p>You will be given a random magic number at the start of the game.
+						<br>
+						There are four food items below. By clicking on a food item, you will add a specific amount of points to your total score.
+						<br>
+						You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
+						<br>
+						The value of each food is hidden from you until you click on it.
+						<br>
+						Each time the game starts, the game will change the values of each food.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+				<!--Randomly Generated Number Panel-->
+			<div class="col-lg-3">
+				<div class="panel panel-default">
+					<p id="magicNumber">Magic Number: </p>
+				</div>
+			</div>
+		<div class="row">
+			<div class="col-lg-2">
+				<div class="panel panel-default">
+					<p id="winOrLose">#</p>
+					<p id="numberOfWins">Wins: </p>
+					<p id="numberofLosses">Losses: </p>
+				</div>
+			</div>	
+		</div>
+
+		<div class="row">
+				<!--food images here-->
+			<div class="col-sm-2 panel panel-default">
+				<img class="img-rounded img-reponsive center-block" id="sandwichImage" src="assets/images/sandwich.jpg" alt="sandwich">
+			</div>
+			<div class="col-sm-2 panel panel-default">
+				<img class="img-rounded img-reponsive center-block" id="pizzaImage" src="assets/images/pizza.jpg" alt="pizza">	
+			</div>
+			<div class="col-sm-2 panel panel-default">
+				<img class="img-rounded img-reponsive center-block" id="burgerImage" src="assets/images/burger.jpg" alt="burger">
+			</div>
+			<div class="col-sm-2 panel panel-default">
+				<img class="img-rounded img-reponsive center-block" id="cupcakeImage" src="assets/images/cupcake.jpg" alt="cupcake">
+			</div>
+		</div>
+
+		<!--Food value count here-->
+		<div class="row">
+			<div class="col-lg-4 panel panel-default box">
+				<p id="totalScore">Total Score: </p>
+			</div>
+		</div>
+
+</div>
+</div>
+<script src='assets/javascript/game.js'></script>
+</body>
+</html>
